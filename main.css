@@ -1,0 +1,506 @@
+/* General Styling*/
+@import "watermelon.css"; 
+
+/*@font-face { 
+    font-family: Abril Display; 
+    src: url('assets/abril.otf'); 
+} 
+
+@font-face { 
+    font-family: Inter; 
+    src: url('assets/inter.woff'); 
+} 
+*/
+html, body {
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /*font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+ul{
+    padding-inline-start: 0.1;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16pt;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+
+}
+
+h1, h2, h3 {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--wm-colours-dark);
+}
+
+h3 {
+    font-size: 2.0rem;
+    padding-bottom: 0.25rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+h4 {
+    font-size: 1.45rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 490;
+
+
+}
+
+p {
+    margin: 1px 0;
+    padding: 0;
+    font-size: 1rem;
+    letter-spacing: 0.01rem; 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+  }
+
+.profile {
+    border-radius:20px
+}
+
+.reframe {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 100px;
+    object-fit: cover;
+    border-radius: 0.05rem;
+    padding: 1rem;
+}
+
+
+
+/* General - Navigation*/
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh;
+    padding: 2%;
+	z-index: 4
+}
+
+.nav-list{
+    list-style: none;
+    width:40%;
+    font-size: 1.2em;
+}
+
+.nav-item{
+    padding: 2%;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--wm-colours-dark);
+}
+
+a:hover {
+    text-decoration: underline;
+  }
+
+.burger{
+    display: none;
+}
+
+.burger div {
+    width: 2rem;
+    height: 0.25rem;
+    margin: 0.25rem;
+    background-color: var(--wm-colours-light);
+    
+}
+
+/* Home - Landing */
+
+.landing {
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+    /* background: url('assets/personal-olive.svg') no-repeat left; */
+}
+
+
+.scene {
+    position: absolute;
+    max-width:100vw;
+    max-height:75vh;
+    height:auto;
+    bottom: 0;
+	/* transform: translateY(var(--translateY));
+	will-change: transform; */
+}
+
+#landing-0 {
+    z-index: 3;
+    left: -5;
+	width: 100vw;
+    bottom: -5
+}
+
+#landing-1-right {
+    pointer-events: none;
+    z-index: 2;
+    right:0;
+    max-height:105vh;
+    
+    
+}
+#landing-1-left {
+    pointer-events: none;
+    z-index: 2; 
+    left:0; 
+    max-height:105vh;
+}
+
+
+#landing-2 {
+    z-index: 1;
+    left:0;
+}
+
+#landing-3 {
+    z-index: 0;
+    right:0;
+}
+
+#landing-4 {
+    z-index: -1;
+    left:-10;
+}
+
+#landing-5 {
+    z-index: -2;
+    right:0;
+}
+
+
+#landing-6 {
+    z-index: -3;
+    width:100vw;
+}
+
+.landing-content {
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.landing h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.1rem;
+    text-align: center;
+}
+
+.landing h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.landing ul{
+    text-align: center;
+    justify-content: center;
+    z-index: 7;
+}
+
+.fab-dark {
+    font-size: 2rem;
+    color: var(--wm-colours-dark);
+}
+
+/* Home - About */
+
+#section-about{
+    padding-top:5em;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+
+}
+
+.about-photo img{
+    height: 15em;
+    width: 15em;
+    overflow: hidden;
+    padding: 1em;
+}
+
+/* Home - Projects */
+
+
+h3 {
+    font-size: 2.4rem;
+    padding-bottom: 0.25rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.card-link:hover{
+    text-decoration: none;
+}
+
+.project-content{
+
+    display: inline;
+    padding: 1.75rem;
+    align-items: center;
+}
+
+/* Gallery - Photo Grid*/
+
+#section-gallery{
+    padding: 0 15vw 10px 15vw;
+}
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+.gallery-column {
+    flex: 0 0 32%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+   
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+#gallery-shots{
+    display:block
+}
+
+
+/* General - Footer */
+
+footer {
+    background-color: var(--wm-colours-dark);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.footer-content {
+    padding: 1em 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+} 
+
+.footer-content h2{
+    color: var(--wm-colours-light);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.footer-content p{
+    color: var(--wm-colours-light);    
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    
+}
+
+.wm-icon {
+    margin: auto;
+}
+
+
+#icons-light {
+    font-size: large;
+    z-index: 4;
+}
+
+.fab-light {
+    color: var(--wm-colours-light)
+}
+/* General - Construction */
+
+.construction{
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+}
+
+.construction-content {
+    padding-top: 5%;
+    width: 50%;
+
+}
+
+
+/* General - Media Queries*/
+
+@media screen and (max-width:1024px){
+    .wm-section {
+        padding: 0 12vw 70px 12vw;
+      }
+    
+    .gallery-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .nav {
+        z-index: 4;
+        
+    }
+}
+
+@media screen and (max-width:768px){
+
+    /* General - Styling */
+    body{
+        overflow-x: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+    }
+
+    p{
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    h4{
+        color: var(--wm-colours-dark);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+    }
+
+    /* General - Navigation */
+    .nav {
+        z-index: 4;
+        position: relative;
+        justify-content: flex-end;
+        background-color: var(--wm-colours-dark);
+        
+    }
+
+    .nav-list{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--wm-colours-dark);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+        
+    }
+
+    .nav-list li{
+        color: var(--wm-colours-light);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+    }
+    
+    .burger{
+        display:block;
+    }
+
+    .nav-item {
+        color: var(--wm-colours-light);
+        z-index: 4;
+     }
+
+    .nav-link {
+        color: var(--wm-colours-light);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    a:link, a:visited{
+        text-decoration: none;
+        color: var(--wm-colours-light);
+    }
+
+    #landing-1-right {
+       visibility: hidden;
+    
+    }
+    #landing-1-left {
+        visibility: hidden;
+    }
+
+    .landing {
+        background: none;
+      }
+
+    .landing h1{
+        margin-top: 40%;
+        font-size: 5.5rem;
+    }
+    
+    .landing h2{
+        font-size: 2rem;
+    }
+
+    .landing-content{
+        padding: 0 12.5vw 70px 12.5vw;
+    }
+
+    .wm-flex-row {
+        display: flex;
+        flex-direction: column;
+      }
+
+    .gallery-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+
+/* General - Keyframes */
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0; 
+        transform: translateX(40px); 
+    } to {
+        opacity: 1; 
+        transform: translateX(0px); 
+    }
+}
+
+.toggle .line-1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-3{
+    opacity: 0;
+}
+
+.toggle .line-3{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}

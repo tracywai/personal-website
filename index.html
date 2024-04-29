@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tracy's personal website. Student at the University of Waterloo studying Systems Design Engineering">
+
+        <!-- Tab Info -->
+        <title>Tracy Wai!</title>
+        
+        <!-- Fonts -->
+        <link rel="preload" href="assets/abril.otf" as="style">
+        <link rel="preload" href="assets/inter.woff" as="stlye">
+
+        <!-- Stylesheets-->
+        <link rel="stylesheet" href="watermelon.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156275631-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156275631-1');
+        </script>
+
+    </head>
+    <body> 
+        <header>
+            <div class="nav-bar">
+                <nav class="nav">
+                    <ul class="nav-list wm-flex-row">
+                            <li class="nav-item wm-link"><a href="index.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                            <li class="nav-item wm-link"><a href="experience.html" name="Link to Projects Page" class="nav-link">Experience</a></li>
+                            <li class="nav-item wm-link"><a href="gallery.html" name="Link to Photos Page" class="nav-link">Photos</a></li> 
+                            <li class="nav-item"><a rel="noopener" href="https://tracywai.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile" name="Link to substack" class="nav-link" target="_blank">Writing</a></li>
+                           
+                    </ul>
+                    <div class="burger">
+                        <div class="line-1" id="line-1"></div>
+                        <div class="line-2" id="line-2"></div>
+                        <div class="line-3" id="line-3"></div>
+                     </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Landing Page -->
+        <section class="landing">
+        <div class="parallax">
+            <img class="scene" id="landing-0" alt="A drawing of clouds as part of a landscape" src="assets\landing_0.webp">
+            <img class="scene" id="landing-1-left" alt="A drawing of foilage as part of a landscape" src="assets\landing_1_left.webp">
+            <img class="scene" id="landing-1-right" alt="A drawing of foilage as part of a landscape" src="assets\landing_1_right.webp">
+            <img class="scene" id="landing-2"  alt="A drawing of a girl standing on a cliff as part of a landscape" src="assets\landing_2.webp">
+            <img class="scene" id="landing-3" alt="A drawing of mountains as part of a landscape" src="assets\landing_3.webp">
+            <img class="scene" id="landing-4" alt="A drawing of mountains as part of a landscape" src="assets\landing_4.webp">
+            <img class="scene" id="landing-5" alt="A drawing of mountains as part of a landscape" src="assets\landing_5.webp">
+            <img class="scene" id="landing-6" alt="A drawing of mountains as part of a landscape" src="assets\landing_6.webp">
+        </div>
+
+        <div class="landing-content wm-flex-column wm-flex-33">
+            <h1 class="title title-landing">Hey, I'm Tracy!</h1><br>
+                <h2 class="subtitle subtitle-landing">Welcome to my humble abode :)</h2>
+            <div class="intro-icons">
+                <ul class="wm-icon">
+                    <!--<li><a name="Link to LinkedIn" rel="noopener"href="https://www.linkedin.com/in/tracywai/"> <i class="fab fab-dark fa-linkedin"></i></a></li>  -->                      
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <!-- About -->
+        <section class="wm-section wm-flex-row" id="section-about">
+            <div class="wm-flex-33 about-photo">
+                <img class="profile" data-lazy="img/me.JPG" alt="A photo of Tracy Wai">
+            </div>
+            <div class="wm-flex-66">
+                <h3 class="wm-section-title">About Me</h3>
+
+                <p class="section-text"><strong>I’m a student, early-career product manager, and possibly one of the biggest extroverts you'll meet.
+                    
+                </strong><br></br>
+                
+                Currently studying Systems Design Engineering @ UWaterloo. When I’m not knee deep in non-fiction, catch me going on long walks or playing word games! I can also be found watching NBA and NCAA Women's basketball, learning a new viola concerto, or exploring new cities with my friends.<br></br>
+                I always feel at home meeting people who are curious, candid, and infectiously driven. Whether this sounds like you or who you're striving to be, reach out and <u><a href="https://calendly.com/tracy-wai/30min">let’s chat</a></u>!</p><br>
+
+                <div class="about-buttons wm-flex-row">
+                    <form action="https://tracywai.github.io/my-personal-website/experience.html" method="get" target="_blank">
+                        <button class="wm-button" id="projects-and-work">Experience</button>
+                    </form>
+                    <form action="https://www.linkedin.com/in/tracywai/" method="get" target="_blank">
+                        <button class="wm-button" id="projects-and-work">LinkedIn</button>
+                    </form>
+                    <form action="mailto:twai@uwaterloo.ca" target="_blank">
+                        <button class="wm-button" id="resume" >Email</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="wm-section wm-flex-row">
+            <div class="wm-flex-90">
+                <h3 class="wm-section-title">Currently, I'm...</h3>
+                <ul class="section-text" style="line-height:124%" >
+                    <li style="line-height: 150%;"> Mentoring first years and building community in campus housing as a <u><a href="https://uwaterloo.ca/campus-housing/student-experience/residence-experience">Residence Life Don</a></u></strong></li><br>
+                    <li style="line-height: 150%;"> Sharing my student experiences and giving tour guides as an <u><a href="https://uwaterloo.ca/engineering-student-ambassadors/">Engineering Ambassador</a></u></strong></li><br>
+                    <li > Scoping software solutions for non-profits at <u><a href="https://uwblueprint.org">UW Blueprint</a></u></strong></li>
+            </div>
+        </section>
+
+        <section class="wm-section wm-flex-row">
+            <div class="wm-flex-90">
+                <h3 class="wm-section-title">In the past, I've...</h3>
+                <ul class="section-text" style="line-height:124%" >
+                    <li style="line-height: 150%;">Interned at <u><a href="https://plooto.com">Plooto</a></u> and <u><a href="https://www.sap.com/canada/index.html">SAP Canada</a></u> as a Product Manager and at <u><a href="https://www.veeva.com/products/crm-suite/network-customer-master/">Veeva Systems</a></u> as a QA Engineer</li><br>
+                    <li > Designed and implemented features for the <u><a href="https://uwwistem.com">UW Women in STEM website</a></u></strong></li><br>
+                    <li style="line-height: 150%;"> Worked extensively with data and created impact reports for <u><a href="https://wusa.ca/services/student-run-services/food-support-service/">WUSA Food Support Service</a></u></li>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="wm-section" id="section-projects">
+            <h3 class="wm-section-title">Some of my favourite reads are...</h3>
+
+                    <div class="wm-long-card wm-hover wm-flex-row " id="wbba">
+                        <img class="reframe" src="img/reads/wbba.jpg" alt="cover of when breath becomes air">
+                        <div class="wm-flex-column project-content">
+                            <h4>When Breath Becomes Air by Paul Kalanithi</h4>
+                            <ul class="wm-hl">
+                                <li>Memoir</li>
+                            </ul>
+                            <p>One of the first memoirs I've read. Paul eloquently narrates his battle with cancer, which had been concurrent with his early career in neurosurgery. An incredibly moving memoir and my go-to non-fiction recommendation. 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--<a name="Link" rel="noopener" href="https://devpost.com/software/everest-zn12sw" class="card-link" target="_blank" >  -->
+                    <div class="wm-long-card wm-hover wm-flex-row" id="project-everest">
+                        <img class="reframe" src="img/reads/inspired.jpg" alt="cover of inspired">
+                        <div class="wm-flex-col project-content">
+                            <h4>Inspired by Marty Cagan</h4>
+                            <ul class="wm-hl">
+                                <li>Product Management</li>
+                            </ul>
+                            <p>The book that grew my love for product management. I especially liked the product manager profiles from a wide range of companies that details how the decisions were made and its lasting impact.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--<a name="Link to Policython" rel="noopener" href="https://policython.org" class="card-link" target="_blank" >  -->
+                    <div class="wm-long-card wm-hover wm-flex-row" id="project-policython">
+                        <img class="reframe" src="img/reads/tstwbf.jpg" alt="cover of they said this would be fun">
+                        <div class="wm-flex-column project-content">
+                            <h4>They Said This Would Be Fun by Eternity Martis</h4>
+                            <ul class="wm-hl">
+                                <li>Memoir</li>
+                            </ul>
+                            <p>At the height of BLM, I read this memoir and referenced it as the basis for my (very lengthy) essay spotlighting social justice issues at Canadian institutions. You can read it <u><a href="https://docs.google.com/document/d/1Tr5xvjiFHvwCrzkq-bk1C9jFq58n3ueA/edit?usp=sharing&ouid=104093627940205565529&rtpof=true&sd=true">here</a></u>.  
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--<a name="No link" href="http://www.sfu.ca/fenv/news/a-hive-of-students-suit-up-to-protect-honeybees/" rel="noopener" class="card-link" target="_blank" > -->
+                <a>    <div class="wm-long-card wm-hover wm-flex-row" id="project-bee">
+                        <img class="reframe" src="img/reads/igmmd.jpg" alt="cover of educated">
+                        <div class="wm-flex-column project-content">
+                            <h4>I'm Glad My Mom Died by Jennette McCurdy</h4>
+                            <ul class="wm-hl">
+                                <li>Memoir</li>
+                            </ul>
+                            <p>I grew up watching both iCarly and Sam and Cat, and to learn what Jennette was going through was quite an emotional rollercoaster. She articulates her relationship with acting really well and I appreciated how she integrated her sense of humour!
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--<a name="Link to SDC Website" rel="noopener" href="https://www.humanityunmasked.org/stories/ansons-story" class="card-link" target="_blank" >  -->
+                    <div class="wm-long-card wm-hover wm-flex-row" id="project-covid">
+                        <img class="reframe" src="img/reads/educated.jpg" alt="cover of Educated">
+                        <div class="wm-flex-column project-content">
+                            <h4>Educated by Tara Westover</h4>
+                            <ul class="wm-hl">
+                                <li>Memoir</li>
+                            </ul>
+                            <p>I really admired Tara's drive to pursue her own path with education and her bravery to tell her story. She's a talented writer and conveys the complexity in her familial relationships quite well and I was thoroughly captivated thorughout the entire book.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+        
+        </section>
+
+              <!-- Obsessions -->
+              <section class="wm-section" id="section-projects">
+                <h3 class="wm-section-title">Some of my favourite things right now...</h3>
+    
+                <div class="wm-flex-row wm-flex-33" id="">
+                    <a name="Link to 99% PI" rel="noopener" href="https://www.futurefarming.com/Tools-data/Articles/2019/5/Precision-farming-is-key-to-growing-better-crops-421886E/" class="card-link" target="_blank" >  
+                        <div class="wm-card wm-hover wm-flex-column" id="obsession-vlogbrothers">
+                            
+                            <h4>99% Invisible</h4>
+                    
+                            <p>A captivating podcast on architecture and design. Roman Mars is quite a masterful storyteller.
+                            </p>
+                        </div>
+                    </a>
+                    <a name="Link to Markham Urban design docs" rel="noopener" href="https://www.markham.ca/wps/portal/home/business/planning/urban-design-services/03-urban-design-studies-and-documents" class="card-link" target="_blank" >  
+                        <div class="wm-card wm-hover wm-flex-column" id="obsession-vlogbrothers">
+                            
+                            <h4>Urban design</h4>
+                    
+                                If I wasn't pursuing engineering, I'd probably be in the Planning program at UWaterloo. It's fascinating to learn about the strategy behind building my city. 
+                            </p>
+                        </div>
+                    </a>
+                    <a name="Link to Brew Dr Kombucha" rel="noopener" href="https://www.brewdrkombucha.com/about-us" class="card-link" target="_blank" >  
+                        <div class="wm-card wm-hover wm-flex-column" id="obsession-vlogbrothers">
+                            
+                            <h4>Kombucha</h4>
+                    
+                            <p>They say it's an acquired taste, and I have to agree. My go-to these days is Brew Dr's Island Mango Kombucha. Healthy gut!
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            
+            </section> <br> <br> 
+
+
+
+        </body>
+
+        <footer class="page-footer">
+				
+        <div class="socials">
+
+        <div class="wm-section">
+            <div class="footer-content wm-flex-column"><br><br>
+                <ul class="wm-icon">
+                    <li> <a name="Link to Email" rel="noopener" href="mailto:twai@uwaterloo.ca" target="_blank"> <i class="fa fa-envelope"> </i> </a> </li>
+                    <li><a name="Link to LinkedIn" rel="noopener" href="https://www.linkedin.com/in/tracywai/" target="_blank"> <i class="fab fab-light fa-linkedin"></i></a></li>
+                    <!--<li><a name="Link to Facebook" rel="noopener" href="https://www.facebook.com/tracy.wai.982/" target="_blank"> <i class="fab fab-light fa-facebook-square"></i></a></li>-->
+                    <li><a name="Link to Github" rel="noopener" href="https://github.com/tracywai" target="_blank"> <i class="fab fa-github" style="color: #ffffff;"></i></a></li>
+                    <li><a name="Link to Spotify" rel="noopener" href="https://open.spotify.com/user/tracywai?si=e1099b6fdd5c4a3a" target="_blank"> <i class="fa fa-spotify"></i></a></li><br></br>
+                    <p class="copyright">&copy; Tracy W. 2023 </p>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Main site JS File -->
+    <script src="main.js"></script>
+
+</html>
